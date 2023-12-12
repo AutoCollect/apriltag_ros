@@ -14,14 +14,16 @@
 #
 # ### Syntax
 #
-# standalone_tags:
-#   [
-#     {id: ID, size: SIZE, name: NAME},
-#     ...
-#   ]
 standalone_tags:
   [
+    {id: 0, size: 0.0765},
+    {id: 1, size: 0.0765},
+    {id: 2, size: 0.0765},
+    {id: 3, size: 0.0765}
   ]
+# standalone_tags:
+#   [
+#   ]
 # ## Tag bundle definitions
 # ### Remarks
 #
@@ -45,4 +47,14 @@ standalone_tags:
 #   ]
 tag_bundles:
   [
+    {
+      name: 'my_bundle',
+      layout:
+        [
+          {id: 0, size: 0.08, x: 0.0000, y: 0.0000, z: 0.0000, qw: 1.0000, qx: 0.0000, qy: 0.0000, qz: 0.0000},
+          {id: 1, size: 0.08, x: 0.0078, y: 0.2113, z: 0.0139, qw: 1.0000, qx: -0.0029, qy: -0.0068, qz: -0.0013},
+          {id: 3, size: 0.08, x: 0.1771, y: 0.2103, z: 0.0169, qw: 0.9997, qx: 0.0153, qy: -0.0165, qz: -0.0013},
+          {id: 2, size: 0.08, x: 0.1589, y: 0.0016, z: 0.0139, qw: 0.9996, qx: 0.0210, qy: -0.0165, qz: -0.0009}
+        ]
+    }
   ]
